@@ -7,7 +7,7 @@ app.MapGet("/", () => new
 {
     app = "Beacon",
     status = "ok",
-    version = "5"
+    version = "6"
 });
 
 app.MapGet("/health", () => Results.Ok(new { status = "healthy" }));
