@@ -16,7 +16,7 @@ spec:
         - name: ghcr-secret
       containers:
         - name: beacon
-          image: ghcr.io/95hanmel-coder/beacon:1c3dfd2
+          image: ghcr.io/95hanmel-coder/beacon:2c80dc1
           ports:
             - containerPort: 8080
           envFrom:
