@@ -1,0 +1,3 @@
+replicaCount: 3
+imageTag: "2c80dc1"
+ingressHost: ""
