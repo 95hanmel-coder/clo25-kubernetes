@@ -1,7 +1,14 @@
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.ConfigureHttpJsonOptions(options =>
+    options.SerializerOptions.WriteIndented = true);
 var app = builder.Build();
 
-app.MapGet("/", () => new { app = "Beacon", status = "ok" });
+app.MapGet("/", () => new
+{
+    app = "Beacon",
+    status = "ok",
+    version = "2"
+});
 
 app.MapGet("/health", () => Results.Ok(new { status = "healthy" }));
 
